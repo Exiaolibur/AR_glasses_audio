@@ -1,1 +1,7 @@
+The first py file uses a single channel signal collection as the clean_audio of the mouth
 
+The second py file uses a dual channel signal collection (left and right ear channels) as the reverberation signal get_tgt_audio after the room reverberation
+
+The third file is used as fdmcWF to get the frequency domain representation h of RIR.
+
+Run the first py first, then run the second py, and then run the fdmcWF file.
