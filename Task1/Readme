@@ -1,5 +1,5 @@
-1. Read and process the signal format~~
-2. Convolve two signals~~
-3. The two signals are input to the function fdMWF and output successfully~~
-4. Processing results~~
-5. Distinguish the difference between soundfile.read and wavfile.read in the plot after reading the file~~
+1. Read and process the signal format
+2. Convolve two signals
+3. The two signals are input to the function fdMWF and output successfully
+4. Processing results
+5. Distinguish the difference between soundfile.read and wavfile.read in the plot after reading the file
