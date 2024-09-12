@@ -18,7 +18,7 @@ def main():
     global fs_clean
 
     # 指定录音设备
-    sd.default.device = 'MCHStreamer Lite I2S Toslink'
+    sd.default.device = 'MCHStreamer Lite I2S Spdif'
 
     # 启动音频流
     with sd.Stream(callback=audio_callback, channels=(10,10), samplerate=fs_clean, blocksize=blockLenSmp):
