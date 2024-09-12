@@ -6,7 +6,7 @@ from scipy.io import wavfile
 import matplotlib.pyplot as plt
 
 
-import filters.fdMWF
+from .filters.fdMWF import fdMWF
 
 
 
