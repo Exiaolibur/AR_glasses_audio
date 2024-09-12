@@ -1,4 +1,4 @@
-import dependencies.imports
+from dependencies.imports import *
 
 
 import config.parameters
