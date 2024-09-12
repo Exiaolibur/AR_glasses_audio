@@ -7,7 +7,7 @@ import matplotlib.pyplot as plt
 
 
 from .filters.fdMWF import fdMWF
-
+from config.parameters import *
 
 
 
