@@ -44,10 +44,12 @@ def audio_callback(indata, outdata, frames, time, status):
   #####################
 #卷积这个信号，输出到9-10通道
 
-    output_left = np.zeros(indata.shape[0] + len(irShort[:,0]) - 1)
-    output_right = np.zeros(indata.shape[0] + len(irShort[:,1]) - 1)
+    # output_left = np.zeros(indata.shape[0] + len(irShort[:,0]) - 1)
+    # output_right = np.zeros(indata.shape[0] + len(irShort[:,1]) - 1)
 
-    output_left = fftconvolve(indata[:, 0], irShort[:,0], mode='full')
-    output_right = fftconvolve(indata[:, 1], irShort[:,1], mode='full')
+    output_left = fftconvolve(indata[:, 7], irShort[:,0], mode='same')
+    output_right = fftconvolve(indata[:, 7], irShort[:,1], mode='same')
 
-    outdata[:, :2] = [output_left[:indata.shape[0]], output_right[:indata.shape[0]]]
+    
+    outdata[:, 8] = output_left
+    outdata[:, 9] = output_right
