@@ -15,7 +15,7 @@ def main():
     sd.default.device = 'MCHStreamer Lite I2S Toslink'
 
     # 启动音频流
-    with sd.Stream(callback=audio_callback, channels=(8,2), samplerate=fs_clean, blocksize=blockLenSmp):
+    with sd.Stream(callback=audio_callback, channels=(10,10), samplerate=fs_clean, blocksize=blockLenSmp):
         print("Processing audio stream... Press Ctrl+C to stop.")
         sd.sleep(int(60 * 1000))  # 运行60秒
 
