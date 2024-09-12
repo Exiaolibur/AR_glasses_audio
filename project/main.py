@@ -7,8 +7,8 @@ from scipy.io import wavfile
 from scipy.signal import fftconvolve, stft, windows
 
 
-import config.parameters
-import processing.callback
+from config.parameters import * 
+from processing.callback import audio_callback
 
 
 
